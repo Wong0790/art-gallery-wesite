@@ -12,6 +12,7 @@
     "@fontsource/big-shoulders-display": "^5.0.18",
     "@fontsource/outfit": "^5.0.8",
     "@tailwindcss/typography": "^0.5.10",
+    "gsap": "^3.12.5",
     "vue": "^3.4.19",
     "vue-router": "^4.3.0"
   },

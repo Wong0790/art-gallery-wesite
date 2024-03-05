@@ -120,7 +120,7 @@ footer {
 }
 
 .social-container {
-  @apply flex items-center justify-between gap-5;
+  @apply flex items-center justify-start gap-5;
 }
 
 .location-container {

@@ -3,9 +3,9 @@ import "./style.css";
 import App from "./App.vue";
 import HomePage from "@components/HomePage.vue";
 import OurLocation from "@components/OurLocation.vue";
-import FacebookIcon from "@icons/FacebookIcon.vue";
-import InstagramIcon from "@icons/InstagramIcon.vue";
-import TwitterIcon from "@icons/TwitterIcon.vue";
+import FrontendMentorIcon from "@icons/FrontendMentorIcon.vue";
+import GithubIcon from "@icons/GithubIcon.vue";
+import LinkedInIcon from "@icons/LinkedInIcon.vue";
 import "@fontsource/big-shoulders-display";
 import "@fontsource/big-shoulders-display/800.css";
 import "@fontsource/big-shoulders-display/900.css";
@@ -34,7 +34,7 @@ const router = createRouter({
 });
 
 const app = createApp(App);
-app.component("FacebookIcon", FacebookIcon);
-app.component("InstagramIcon", InstagramIcon);
-app.component("TwitterIcon", TwitterIcon);
+app.component("FrontendMentorIcon", FrontendMentorIcon);
+app.component("GithubIcon", GithubIcon);
+app.component("LinkedInIcon", LinkedInIcon);
 app.use(router).mount("#app");

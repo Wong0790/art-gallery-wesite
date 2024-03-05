@@ -1,29 +1,8 @@
 <script lang="ts" setup>
-import { ref } from "vue";
 import { useRouter } from "vue-router";
 import FooterItem from "./FooterItem.vue";
 
-const loadImg = (url) => {
-  return new URL(url, import.meta.url).href;
-};
-
 const router = useRouter();
-const paintings = ref([
-  {
-    src: "../assets/desktop/image-grid-2.jpg",
-    alt: "Gallery room showcasing a collection of paintings with a sculpture prominently placed in the center",
-    width: 635,
-    height: 720,
-    class: "row-span-2",
-  },
-  {
-    src: "../assets/desktop/image-grid-3.jpg",
-    alt: "Gallery room displaying a collection of paintings with individuals admiring the artwork",
-    width: 445,
-    height: 313,
-    class: "mx-auto",
-  },
-]);
 
 const goToLocation = () => {
   router.push({ name: "Location" });
@@ -46,7 +25,7 @@ const goToLocation = () => {
         class="btn btn-location hover:bg-gold group slide"
         @click="goToLocation"
       >
-        <span class="mr-8">Our location</span>
+        Our location
         <div class="svg-btn-container group-hover:bg-almost-black">
           <img src="@assets/icon-arrow-right.svg" alt="Right arrow svg" />
         </div>
@@ -79,13 +58,18 @@ const goToLocation = () => {
     </div>
     <div class="grid-part-container">
       <img
-        v-for="(painting, index) in paintings"
-        :key="index"
-        :src="loadImg(painting.src)"
-        :alt="painting.alt"
-        :width="painting.width"
-        :height="painting.height"
-        :class="painting.class"
+        src="@assets/desktop/image-grid-2.jpg"
+        alt="Gallery room showcasing a collection of paintings with a sculpture prominently placed in the center"
+        width="635"
+        height="720"
+        class="row-span-2"
+      />
+      <img
+        src="@assets/desktop/image-grid-3.jpg"
+        alt="Gallery room displaying a collection of paintings with individuals admiring the artwork"
+        width="445"
+        height="313"
+        class="mx-auto"
       />
       <div class="bg-almost-black text-white px-6 py-12 md:px-12 md:py-16">
         <h3 class="mb-6">COME & BE INSPIRED</h3>

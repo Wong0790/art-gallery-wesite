@@ -45,11 +45,11 @@ export default {
         widest: ".2265em",
       },
       backgroundImage: {
-        "hero-desktop": "url('/src/assets/desktop/image-hero@2x.jpg')",
-        "hero-small": "url('/src/assets/desktop/image-hero.jpg')",
-        "map-large": "url('/src/assets/desktop/image-map@2x.png')",
-        "map-medium": "url('/src/assets/tablet/image-map@2x.png')",
-        "map-small": "url('/src/assets/mobile/image-map@2x.png')",
+        "hero-desktop": "url('/src/assets/desktop/image-hero@2x.webp')",
+        "hero-small": "url('/src/assets/desktop/image-hero.webp')",
+        "map-large": "url('/src/assets/desktop/image-map@2x.webp')",
+        "map-medium": "url('/src/assets/tablet/image-map@2x.webp')",
+        "map-small": "url('/src/assets/mobile/image-map@2x.webp')",
       },
       width: {
         350: "21.875rem",

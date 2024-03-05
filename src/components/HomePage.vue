@@ -25,7 +25,7 @@ const goToLocation = () => {
         class="btn btn-location hover:bg-gold group slide"
         @click="goToLocation"
       >
-        Our location
+        <span class="mr-8">Our location</span>
         <div class="svg-btn-container group-hover:bg-almost-black">
           <img src="@assets/icon-arrow-right.svg" alt="Right arrow svg" />
         </div>
@@ -71,7 +71,9 @@ const goToLocation = () => {
         height="313"
         class="mx-auto"
       />
-      <div class="bg-almost-black text-white px-6 py-12 md:px-12 md:py-16">
+      <div
+        class="bg-almost-black text-white px-6 py-12 md:px-12 md:py-16 w-fit"
+      >
         <h3 class="mb-6">COME & BE INSPIRED</h3>
         <p>
           We’re excited to welcome you to our gallery and see how our

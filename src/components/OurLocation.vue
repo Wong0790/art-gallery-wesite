@@ -19,7 +19,7 @@ const goBackHome = () => {
         <div class="svg-btn-container group-hover:bg-almost-black">
           <img src="@assets/icon-arrow-left.svg" alt="Left arrow svg" />
         </div>
-        <span class="ml-8">Back to home</span>
+        <span class="ml-8">To home</span>
       </button>
     </div>
     <div class="location-info">

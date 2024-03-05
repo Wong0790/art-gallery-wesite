@@ -6,7 +6,7 @@ defineProps({
 </script>
 
 <template>
-  <a class="group" href="#">
+  <a class="group" href="#your-day">
     <component :is="name" :color="color"></component>
   </a>
 </template>

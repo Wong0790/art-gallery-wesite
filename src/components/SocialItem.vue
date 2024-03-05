@@ -6,7 +6,7 @@ defineProps({
 </script>
 
 <template>
-  <a class="group" href="#your-day">
+  <a class="group" href="#your-day" :aria-label="name">
     <component :is="name" :color="color"></component>
   </a>
 </template>

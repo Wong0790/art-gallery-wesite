@@ -71,9 +71,7 @@ const goToLocation = () => {
         height="313"
         class="mx-auto"
       />
-      <div
-        class="bg-almost-black text-white px-6 py-12 md:px-12 md:py-16 w-fit"
-      >
+      <div class="bg-almost-black text-white px-6 py-12 md:px-12 md:py-16">
         <h3 class="mb-6">COME & BE INSPIRED</h3>
         <p>
           We’re excited to welcome you to our gallery and see how our

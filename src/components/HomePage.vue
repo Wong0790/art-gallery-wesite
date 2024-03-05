@@ -3,17 +3,21 @@ import { ref } from "vue";
 import { useRouter } from "vue-router";
 import FooterItem from "./FooterItem.vue";
 
+const loadImg = (url) => {
+  return new URL(url, import.meta.url).href;
+};
+
 const router = useRouter();
 const paintings = ref([
   {
-    src: "/src/assets/desktop/image-grid-2.jpg",
+    src: "../assets/desktop/image-grid-2.jpg",
     alt: "Gallery room showcasing a collection of paintings with a sculpture prominently placed in the center",
     width: 635,
     height: 720,
     class: "row-span-2",
   },
   {
-    src: "/src/assets/desktop/image-grid-3.jpg",
+    src: "../assets/desktop/image-grid-3.jpg",
     alt: "Gallery room displaying a collection of paintings with individuals admiring the artwork",
     width: 445,
     height: 313,
@@ -77,7 +81,7 @@ const goToLocation = () => {
       <img
         v-for="(painting, index) in paintings"
         :key="index"
-        :src="painting.src"
+        :src="loadImg(painting.src)"
         :alt="painting.alt"
         :width="painting.width"
         :height="painting.height"

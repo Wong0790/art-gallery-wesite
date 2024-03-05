@@ -52,7 +52,6 @@ onMounted(() => {
         start: "top center",
         end: "center center",
         scrub: true,
-        markers: true,
       },
     })
     .to(".first-part-container", {
@@ -73,7 +72,6 @@ onMounted(() => {
         start: "top center",
         end: "top center",
         scrub: true,
-        markers: true,
       },
     })
     .to(".grid-part-container", {
@@ -83,7 +81,7 @@ onMounted(() => {
     })
     .to(
       ["h3", ".gallery-grid"],
-      { opacity: 1, y: 0, stagger: 0.03, duration: 0.1, ease: "power2.out" },
+      { opacity: 1, y: 0, stagger: 0.1, duration: 0.1, ease: "power2.out" },
       ""
     );
 });

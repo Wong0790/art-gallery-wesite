@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply font-custom font-light text-almost-black bg-white;
+}
+
+body {
+  @apply m-0 min-w-80 min-h-screen overflow-x-hidden;
+}
+
+#app {
+  @apply m-auto;
+}
+
+h1 {
+  @apply text-5xl md:text-7xl lg:text-8xl font-heading font-black leading-7 md:leading-8 lg:leading-10 uppercase;
+}
+
+h2 {
+  @apply text-2xl lg:text-7xl font-heading font-black leading-7  lg:leading-9 uppercase;
+}
+
+h3 {
+  @apply text-5xl font-heading font-black leading-7 uppercase;
+}
+
+h4 {
+  @apply text-3xl lg:text-4xl font-heading font-black leading-6 uppercase;
+}
+
+p {
+  @apply text-lg md:text-xl leading-5 md:leading-6 font-extralight;
+}
+
+small {
+  @apply text-lg leading-5 font-extralight;
+}
+
+header {
+  @apply w-screen flex flex-col md:flex-row items-center;
+}
+
+.left-container {
+  @apply w-full md:w-1/2 xl:w-8/12 min-[2560px]:w-7/12 bg-almost-black bg-hero-desktop bg-right bg-no-repeat bg-cover xl:bg-contain min-h-72  md:min-h-800 text-left;
+}
+
+.right-container {
+  @apply w-full md:w-1/2 xl:w-4/12 min-[2560px]:w-5/12 bg-white min-h-min md:min-h-800 p-4 md:p-0;
+}
+
+.modern-art-gallery {
+  @apply hidden xl:block max-w-448 mt-48 ml-auto mr-375px;
+}
+
+.modern-art-gallery-smaller {
+  @apply block xl:hidden max-w-280 md:max-w-448 mt-8 md:mt-36 ml-0 md:-ml-16;
+}
+
+.blend {
+  @apply text-white mix-blend-difference;
+}
+
+.right-container p {
+  @apply w-fit md:w-350 mt-8 md:mt-12 xl:mt-48 ml-0 md:-ml-16;
+}
+
+.btn {
+  @apply bg-almost-black text-white text-lg font-heading font-extrabold tracking-widest uppercase flex items-center  h-[68px] transition-colors ease-in-out duration-700 animate-bounce;
+}
+
+.btn-location {
+  @apply mt-8 md:mt-12 xl:mt-16 ml-0 md:-ml-16 pl-8;
+}
+
+.btn-go-back {
+  @apply ml-40;
+}
+
+.svg-btn-container {
+  @apply bg-gold  w-[56px] p-6 ml-auto transition-colors ease-in-out duration-700;
+}
+
+#your-day {
+  @apply px-4 md:px-10 py-28 xl:px-40 xl:py-40;
+}
+
+#your-day h3,
+#your-day p {
+  @apply max-w-350;
+}
+
+.first-part-container {
+  @apply flex flex-col-reverse md:flex-row justify-center gap-8 xl:gap-32;
+}
+
+.grid-part-container {
+  @apply grid grid-flow-row md:grid-rows-2 md:grid-flow-col place-content-center place-items-stretch gap-3 lg:gap-30 mt-3 lg:mt-30px;
+}
+
+footer {
+  @apply bg-almost-black text-white;
+}
+
+.footer-container {
+  @apply py-8 md:py-14 lg:py-20 px-8 flex flex-col md:flex-row items-start justify-evenly gap-9;
+}
+
+.footer-container h4 {
+  @apply w-150 lg:w-170;
+}
+
+.footer-container small {
+  @apply max-w-430;
+}
+
+.footer-first-section {
+  @apply flex flex-col md:flex-row items-start md:items-center gap-9 lg:gap-36;
+}
+
+.social-container {
+  @apply flex items-center justify-between gap-5;
+}
+
+.location-container {
+  @apply w-full bg-almost-black bg-map-small md:bg-map-medium lg:bg-map-large bg-no-repeat bg-cover min-h-550 md:min-h-600 min-[2000px]:min-h-1000 py-10;
+}
+
+.location-info {
+  @apply bg-almost-black text-white py-20 lg:py-28 px-10 flex flex-col md:flex-row items-start justify-evenly gap-12 md:gap-16;
+}
+
+.location-info h2 {
+  @apply max-w-280;
+}
+
+.dynamic-container {
+  @media (min-width: 1920px) {
+    height: calc(100vh - 784px);
+  }
+  @media (min-width: 2000px) {
+    height: calc(100vh - 784px);
+  }
+}

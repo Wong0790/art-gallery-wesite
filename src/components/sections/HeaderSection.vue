@@ -42,9 +42,9 @@ onMounted(() => {
         @click="goToLocation"
       >
         <span class="mr-8">Our location</span>
-        <div class="svg-btn-container group-hover:bg-almost-black">
+        <span class="svg-btn-container group-hover:bg-almost-black">
           <img src="@assets/icon-arrow-right.svg" alt="Right arrow svg" />
-        </div>
+        </span>
       </button>
     </div>
   </header>

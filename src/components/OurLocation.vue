@@ -32,9 +32,9 @@ onMounted(() => {
       class="btn btn-go-back hover:bg-gold group slide pl-0 pr-8"
       @click="goBackHome"
     >
-      <div class="svg-btn-container group-hover:bg-almost-black">
+      <span class="svg-btn-container group-hover:bg-almost-black">
         <img src="@assets/icon-arrow-left.svg" alt="Left arrow svg" />
-      </div>
+      </span>
       <span class="ml-8">To home</span>
     </button>
     <div class="location-info">
